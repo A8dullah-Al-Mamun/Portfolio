@@ -1,0 +1,4 @@
+import { Briefcase } from 'lucide-react'; import Section from './Section'; import { personal as p } from '../data/personal'
+export default function Experience(){ return <Section id="experience" title="Experience">
+ {p.experience.length?<ol className="space-y-4 border-l border-line pl-6">{p.experience.map(x=><li key={x.role+x.org} className="card"><h3 className="font-semibold">{x.role} · {x.org}</h3><p className="text-sm text-cyan2">{x.period}</p><p className="mt-2">{x.summary}</p></li>)}</ol>
+ :<div className="card flex items-start gap-4 border-dashed"><Briefcase className="mt-1 shrink-0 text-accent"/><div><h3 className="font-semibold">No experience added yet</h3><p className="mt-1 text-sm">Internships, freelance work, or volunteering will appear here. Add entries to <code className="font-mono text-cyan2">experience</code> in <code className="font-mono text-cyan2">src/data/personal.ts</code>.</p></div></div>}</Section>}

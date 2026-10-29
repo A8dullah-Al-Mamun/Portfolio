@@ -1,0 +1,13 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{@apply bg-ink text-slate-300 font-sans antialiased overflow-x-hidden}
+h1,h2,h3{@apply font-display text-white}
+:focus-visible{outline:2px solid #22d3ee;outline-offset:3px}
+.grid-bg{background-image:linear-gradient(rgba(59,130,246,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.07) 1px,transparent 1px);background-size:48px 48px;animation:drift 24s linear infinite;mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 75%)}
+@keyframes drift{to{background-position:48px 48px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+.btn{@apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-lg px-5 text-sm font-semibold transition}
+.btn-p{@apply btn bg-accent text-white hover:bg-blue-400}
+.btn-s{@apply btn border border-line bg-panel text-slate-100 hover:border-accent}
+.card{@apply rounded-xl border border-line bg-panel/70 p-6}
+.sec{@apply mx-auto max-w-6xl px-5 py-20 sm:px-8}
