@@ -32,4 +32,3 @@ Hash routing means refreshing `/#/projects/project-1` works on Pages.
 - Blank page / 404 assets: `REPO_NAME` doesn't match the repo name.
 - `npm ci` fails: commit `package-lock.json`.
 - Photo missing: file must be exactly `public/images/profile.jpg`.
-- Workflow fails on deploy: confirm Pages source is "GitHub Actions".
